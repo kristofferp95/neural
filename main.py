@@ -56,10 +56,10 @@ def get_args_parser():
         default=32,
         help="number of samples per iteration in the epoch",
     )
-    parser.add_argument("--num_workers", default=8, type=int)
+    parser.add_argument("--num_workers", default=2, type=int)
 
     # optimizer settings
-    parser.add_argument("--lr", type=float, default=0.001, help="The learning rate")
+    parser.add_argument("--lr", type=float, default=0.005, help="The learning rate")
 
     # trainng related parameters
     parser.add_argument(
